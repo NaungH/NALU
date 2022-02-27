@@ -24,7 +24,7 @@ and observed data from this location is also applied for data analysing from 199
 
 ![Yangon,Myanmar](graph/Yangon.png)
 
-##Run Instruction 
+## Run Instruction 
 Run the gui.py file and user need to input latitude, longitude and year.
 There are two buttons, one is to show the graphs and
 the user can press the save to csv button,
@@ -35,7 +35,7 @@ After running the code,it will show line graphs and scatter plot charts, compari
 16.85 for latitude and 96.18 for longitude. Otherwise, error messages will appear, 
 however different location will give some graphs but results might be meaningless.*
 
-##Requirement 
+## Requirement 
 * flussenv
 * xarray
 * sklearn.matrix
@@ -184,7 +184,7 @@ define one function under the class to extract data from raw data file.
 To split the 10 years of data into small list use the function np.array_split.
 By using the pd.dataframe, transform the data into pandas dataframe for easier manipulation. 
 
-###APHRODITE Data Extraction
+### APHRODITE Data Extraction
 The format of the NetCDF file of APHRODITE satellite is different from TRMM satellite, 
 we need to use the different code for data extraction. 
 We save the data into csv file since the downloaded satellite data given daily values.
