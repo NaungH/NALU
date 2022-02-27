@@ -1,5 +1,5 @@
 # Satellite_Precipitation_Data_Analysis_Python
-##NALU
+## NALU
 ## Satellite Data
 TRMM (Tropical Rainfall Measuring Mission) and 
 APHRODITE (Asian Precipitation Highly Resolved Observational Data Integration towards Evaluation) 
