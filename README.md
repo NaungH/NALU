@@ -14,7 +14,7 @@ if the user do not use a software for data extracting such as ArcGIS.
 Therefore, we used Python programming for data extracting and easy understanding format. 
 
 
-##Project Goals 
+## Project Goals 
 1. To transfer the satellite data to readable and easily understandable figure and statistic
 2. To learn the accuracy of the satellite data
 
@@ -41,11 +41,11 @@ however different location will give some graphs but results might be meaningles
 * sklearn.matrix
 * cftime
 
-##Code Diagram 
+### Code Diagram 
 ![Code Diagram](graph/Code Diagram.PNG)
 
-##Usage of Function 
-##GUI
+## Usage of Function 
+### GUI
 We import the tkinter for GUI. We create two entry for user to input latitude and longitude.
 We create a combobox for user to select available year. 
 We use the input information to get the data we need from raw data files.
@@ -171,11 +171,11 @@ class CalApp(tk.Frame):  # Build GUI input
 run = CalApp(root)
 root.mainloop()
 ```
-##GUI showcase
+### GUI showcase
 
 ![GUI showcase](graph/GUI.png)
 
-##TRMM Data Extraction
+## TRMM Data Extraction
 
 We use the xarray package to extract the NetCDF file into pandas dataframe by specific location. 
 We create the class to store the data from trmm satellite and 
@@ -188,7 +188,7 @@ The format of the NetCDF file of APHRODITE satellite is different from TRMM sate
 we need to use the different code for data extraction. 
 We save the data into csv file since the downloaded satellite data given daily values.
 
-##Observed Data
+## Observed Data
 We import the observed data (xlsx file) and change the data into same format with satellite data. 
 ```python
 import numpy as np
@@ -294,7 +294,7 @@ class Observed:  # create observed class to store the observed data
 
 
 ```
-##Line Graph
+## Line Graph
 We import the matplotlib.pyplot as plt to create the line graph for comparison of satellite data and observed data. 
 ```python
 import matplotlib.pyplot as plt
@@ -310,7 +310,7 @@ def line_graph(x, a, t, o, ty):  # plot monthly precipitation line graph from 3 
     plt.legend()
     plt.show()
 ```
-##Scatter Plot Chart 
+## Scatter Plot Chart 
 We use the sklearn.metrics to calculate r2 score on our plot charts.
 For the plotting, use matplotlib.pyplot simply.
 We create the empty list to store slope and intercept of the original data for calibration. 
@@ -350,7 +350,7 @@ def scatter_plot(a, t, o):
     plt.show()
     return value
 ```
-##Calibration
+## Calibration
 We import the slope and intercept value from previous stage to do the calibration, 
 and we create the line graphs and scatter plot charts with calibrated data.
 ```python
@@ -392,13 +392,13 @@ def calibration(a, t, o):
     plt.show()
 ```
 
-##Results and Discussion
+## Results and Discussion
 According to the analysis results from line graphs and plot charts by comparing with observed data,
 TRMM satellite gives more accurate results since before calibration. 
 However, after calibration both satellites give the reasonable results 
 which are suitable to use for the case study area. 
 
-##Sample Graphs
+## Sample Graphs
 ![](graph/line%20graph.png)
 ![](graph/scatter%20plot%20chart.png)
 ![](graph/calibrated%20line.png)
