@@ -5,18 +5,18 @@ TRMM (Tropical Rainfall Measuring Mission) and
 APHRODITE (Asian Precipitation Highly Resolved Observational Data Integration towards Evaluation) 
 are the two different satellites which can give the precipitation data, runoff data 
 and elevation data for all over the world.
-Since the data from satellite are giving for whole area of world, there may have ome errors for small area.
+Since the data from satellite are giving for whole area of the world, there may have ome errors for small areas.
 Thus, precipitation data error analysing and calibration the satellite data by comparing with 
 observed precipitation data are performed in this project by using Python programming. 
 
-In addition, downloaded satellite data are in NetCDF file(Network Common Data Form, 
+In addition, downloaded satellite data are in NetCDF files(Network Common Data Form, 
 file storing format for multidimensional scientific data) and the data are not in easy readable format 
 if the user do not use a software for data extracting such as ArcGIS.
 Therefore, we used Python programming for data extracting and easy understanding format. 
 
 
 ## Project Goals 
-1. To transfer the satellite data to readable and easily understandable figure and statistic
+1. To transfer the satellite data to readable and easily understandable figures and statistic
 2. To learn the accuracy of the satellite data
 
 In order to accomplish these project goals, we used the two different satellites TRMM and APHRODITE. 
@@ -26,15 +26,15 @@ and observed data from this location is also applied for data analysing from 199
 ![Yangon,Myanmar](graph/Yangon.png)
 
 ## Run Instruction 
-Run the gui.py file and user need to input latitude, longitude and year.
+Run the gui.py file and user needs to input latitude, longitude and year.
 There are two buttons, one is to show the graphs and
 the user can press the save to csv button,
 if the user wants to save the downloaded precipitation data as a csv file for two satellites and observed.
-After running the code,it will show line graphs and scatter plot charts, comparison of satellite data and observed data for before and after calibration.
+After running the code,it will show line graphs and scatter plot charts which are comparison of satellite data and observed data for before and after calibration.
 
 *Remark: Observed data is only available for case study location,
-16.85 for latitude and 96.18 for longitude. Otherwise, error messages will appear, 
-however different location will give some graphs but results might be meaningless.*
+16.85 latitude and 96.18 longitude. Otherwise, warning messages will appear, 
+however different location will still give precipitation line graphs.*
 
 ## Requirement 
 * flussenv
@@ -353,7 +353,7 @@ def scatter_plot(a, t, o):
     return value
 ```
 ## Calibration
-We import the slope and intercept value from previous stage to do the calibration, 
+We import the slope and intercept values from previous stage to do the calibration, 
 and we create the line graphs and scatter plot charts with calibrated data.
 ```python
 from sklearn.metrics import r2_score
