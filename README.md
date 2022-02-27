@@ -1,4 +1,3 @@
-# NALU
 # Satellite_Precipitation_Data_Analysis_Python
 ## Satellite Data
 TRMM (Tropical Rainfall Measuring Mission) and 
@@ -173,6 +172,7 @@ run = CalApp(root)
 root.mainloop()
 ```
 ###GUI showcase
+
 ![GUI showcase](graph/GUI.png)
 
 ###TRMM Data Extraction
