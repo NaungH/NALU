@@ -1,5 +1,5 @@
-NALU
 # Satellite_Precipitation_Data_Analysis_Python
+##NALU
 ## Satellite Data
 TRMM (Tropical Rainfall Measuring Mission) and 
 APHRODITE (Asian Precipitation Highly Resolved Observational Data Integration towards Evaluation) 
@@ -405,6 +405,8 @@ which are suitable to use for the case study area.
 ![](graph/scatter%20plot%20chart.png)
 ![](graph/calibrated%20line.png)
 ![](graph/calibrated%20scatter%20plot.png)
+
+## Naung Naung Htun, Ting Lun Huang
 
 
 
