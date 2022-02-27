@@ -43,7 +43,7 @@ however different location will give some graphs but results might be meaningles
 
 ### Code Diagram 
 
-![Code Diagram](graph/Code Diagram.png)
+![Code Diagram](graph/code_diagram.png)
 
 ## Usage of Function 
 ### GUI
